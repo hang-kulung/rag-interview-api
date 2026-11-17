@@ -1,1 +1,17 @@
-"""Step 2: Shared enums: ChunkingStrategy, FileType, DocumentStatus."""
+from enum import StrEnum
+
+
+class ChunkingStrategy(StrEnum):
+    FIXED = "fixed"
+    RECURSIVE = "recursive"
+
+
+class FileType(StrEnum):
+    PDF = "pdf"
+    TXT = "txt"
+
+
+class DocumentStatus(StrEnum):
+    PROCESSING = "processing"
+    READY = "ready"
+    FAILED = "failed"
