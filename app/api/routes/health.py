@@ -1,0 +1,1 @@
+"""Wiring: GET /health."""
